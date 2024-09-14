@@ -4,16 +4,17 @@ In the digital age, verifying the accuracy of medical information is crucial to 
 
 ## 📊 Data Source
 
-- **PubMed**: Our primary source of scientific evidence, containing over 20.6 million biomedical abstracts.
+- **[PubMed](https://pubmed.ncbi.nlm.nih.gov/)**: Our primary source of scientific evidence, containing over 20.6 million biomedical abstracts【4†source】.
 - **Datasets**:
-  - **HealthFC**: A dataset of 750 health-related claims from online search queries.
-  - **BioASQ-7b**: A dataset of 745 biomedical claims, curated by experts during the BioASQ challenge.
-  
+  - **HealthFC**: A dataset of 750 health-related claims from online search queries, curated by *Vladika et al. (2024)*.
+  - **BioASQ-7b**: A dataset of 745 biomedical claims from the *BioASQ Challenge, Nentidis et al. (2020)*.
+
 The datasets used for training and testing can be found in the `Datasets` folder of this repository.
+
 
 ## 🛠️ Technologies Used
 
-- **Large Language Models (LLMs)**: We employed Mixtral-8x22B-Instruct-v0.1 for reasoning and PubMedBERT for the classification of claims.
+- **Large Language Models (LLMs)**: We employed **[Mixtral-8x22B-Instruct-v0.1](https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1)** for reasoning and **PubMedBERT** for the classification of claims.
 - **Sparse Retriever**: Utilized for efficient evidence retrieval from PubMed, using an inverted index technique.
 - **BM25 Indexing**: Applied to preprocess and index the biomedical abstracts for faster information retrieval.
 - **Fine-Tuning**: Implemented to improve the model's classification performance.
@@ -43,3 +44,10 @@ The code used to implement the methodology is available in the notebook `Code/Co
 ## 🏆 Conclusions
 
 This work demonstrates the efficacy of machine learning in improving the reliability of medical information. Fine-tuning LLMs proves to be a powerful strategy for enhancing accuracy in fact-checking, even across different datasets. Additionally, the generation of justifications provides a level of transparency that is crucial in the medical field.
+
+### References
+
+1. PubMed: [https://pubmed.ncbi.nlm.nih.gov/](https://pubmed.ncbi.nlm.nih.gov/)
+2. HealthFC (Vladika et al., 2024): *Health Question Answering with Evidence-Based Medical Fact-Checking*.
+3. BioASQ-7b: *BioASQ Challenge, Nentidis et al. (2020)*.
+4. Mixtral-8x22B-Instruct-v0.1: [https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1](https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1).
