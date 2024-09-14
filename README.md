@@ -1,7 +1,6 @@
-# ✔️🩺 Fact-Checking Biomedical Claims: *C*ombining *E*vidence and *R*easoning (CER) 
+# ✔️🩺 Fact-Checking Biomedical Claims: *C*ombining *E*vidence and *R*easoning (CER)
 
 In the digital age, verifying the accuracy of medical information is crucial to prevent the spread of harmful misinformation. To address this, we have developed an automated fact-checking system that leverages PubMed, a comprehensive biomedical knowledge base, alongside a Large Language Model (LLM) to assess the veracity of medical claims. The system generates justifications for the claims and classifies them using zero-shot and fine-tuned models. Extensive experimentation highlights that fine-tuning improves robustness across diverse datasets, ensuring higher accuracy in fact-checking.
-
 
 ## 📊 Data Source
 
@@ -29,6 +28,10 @@ Our approach is structured in three key phases:
 3. **Veracity Prediction**: A classifier assesses the veracity of the claims (true, false, or lacking enough information), utilizing both zero-shot and fine-tuned models.
 
 The code used to implement the methodology is available in the notebook `Code/Code.ipynb` in the `Code` folder.
+
+### Methodology Overview:
+
+![Methodology](./Methodology.png)
 
 ## ✨ Key Features
 
