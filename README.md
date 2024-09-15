@@ -30,7 +30,7 @@ Our approach is structured in three key phases:
 
 The code used to implement the methodology is available in the notebook `Code/Code.ipynb` in the `Code` folder.
 
-### Methodology Overview:
+### Overview
 
 ![Methodology](./Methodology.png)
 
