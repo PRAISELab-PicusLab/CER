@@ -34,6 +34,8 @@ The code used to implement the methodology is available in the notebook `Code/Co
 
 ![Methodology](./Methodology.png)
 
+The process begins with the claim, which is preprocessed and compared against a corpus of abstracts (e.g., PubMed) using a sparse retriever (e.g., BM25 index). Retrieved sentences are combined with the claim and passed to an LLM to generate justifications. A fine-tuned classifier then evaluates the claim, scientific evidence and justifications, outputting a prediction of either true or false.
+
 ## ✨ Key Features
 
 - **Zero-Shot and Fine-Tuned Classification**: Provides reliable fact-checking without the need for extensive task-specific labeled data.
