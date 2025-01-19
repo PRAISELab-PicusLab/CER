@@ -8,6 +8,7 @@ In the digital age, verifying the accuracy of medical information is crucial to 
 - **Datasets**:
   - **HealthFC**: A dataset of 750 health-related claims from online search queries, curated by *Vladika et al. (2024)*.
   - **BioASQ-7b**: A dataset of 745 biomedical claims from the *BioASQ Challenge, Nentidis et al. (2020)*.
+  - **SciFact**: A dataset of 1.4k expert-written scientific claims with evidence-based labels *Wadden et al. (2020)*
 
 The datasets used for training and testing can be found in the `Datasets` folder of this repository.
 
@@ -18,6 +19,8 @@ The datasets used for training and testing can be found in the `Datasets` folder
 - **Sparse Retriever**: Utilized for efficient evidence retrieval from PubMed, using an inverted index technique.
 - **BM25 Indexing**: Applied to preprocess and index the biomedical abstracts for faster information retrieval.
 - **Fine-Tuning**: Implemented to improve the model's classification performance.
+
+  *other experiments with **Dense Retriever**
 
 
 ## 📑 Methodology
